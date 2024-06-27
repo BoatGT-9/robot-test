@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20240626 14:09:19.268" rpa="false" schemaversion="4">
+<suite id="s1" name="Login Fail No Have A Username" source="C:\Users\computer\Desktop\test robot\login_fail_no_have_a_username.robot">
+<test id="s1-t1" name="open Web warering" line="12">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240626 14:09:19.479" level="INFO">Opening browser 'edge' to base url 'http://www.warering.online/home'.</msg>
+<status status="PASS" starttime="20240626 14:09:19.479" endtime="20240626 14:09:21.688"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240626 14:09:21.688" endtime="20240626 14:09:21.740"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240626 14:09:23.741" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240626 14:09:21.741" endtime="20240626 14:09:23.741"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=toggle-big-login-landing-drawer-btn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240626 14:09:23.742" level="INFO">Clicking element 'id=toggle-big-login-landing-drawer-btn'.</msg>
+<status status="PASS" starttime="20240626 14:09:23.742" endtime="20240626 14:09:23.801"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240626 14:09:25.801" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240626 14:09:23.801" endtime="20240626 14:09:25.801"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>12345678User</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240626 14:09:25.801" level="INFO">Typing text '12345678User' into text field 'id=password'.</msg>
+<status status="PASS" starttime="20240626 14:09:25.801" endtime="20240626 14:09:25.951"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240626 14:09:27.953" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240626 14:09:25.952" endtime="20240626 14:09:27.953"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=setup-user-drawer-submit</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240626 14:09:27.954" level="INFO">Clicking element 'id=setup-user-drawer-submit'.</msg>
+<status status="PASS" starttime="20240626 14:09:27.953" endtime="20240626 14:09:28.014"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${DELAY}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240626 14:09:30.015" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240626 14:09:28.014" endtime="20240626 14:09:30.015"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20240626 14:09:30.173" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240626 14:09:30.016" endtime="20240626 14:09:30.173"/>
+</kw>
+<doc>fail no have a username</doc>
+<status status="PASS" starttime="20240626 14:09:19.478" endtime="20240626 14:09:30.174"/>
+</test>
+<status status="PASS" starttime="20240626 14:09:19.269" endtime="20240626 14:09:30.175"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Login Fail No Have A Username">Login Fail No Have A Username</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
